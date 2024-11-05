@@ -1,0 +1,35 @@
+#> NET [SDK] "8.0"
+==> Installation packages
+
+dotnet add package
+
+Microsoft.EntityFrameworkCore                       | 8.0.10
+Microsoft.EntityFrameworkCore.Design                | 8.0.10
+Microsoft.EntityFrameworkCore.Tools                 | 8.0.10
+Microsoft.VisualStudio.Web.CodeGeneration.Design    | 8.0.6
+MySql.EntityFrameworkCore                           | 9.0.0-preview
+Microsoft.EntityFrameworkCore.SqlServer             -> optional | 8.0.10
+
+==> initialize MVC database MySql
+
+dotnet aspnet-codegenerator controller -name MoviesController -m Movie 
+  -dc MvcMovie.Data.MvcMovieContext --relativeFolderPath Controllers 
+  --useDefaultLayout --referenceScriptLibraries --databaseProvider mysql
+
+==> ConnectionString appsettings.json
+
+"ConnectionStrings": {
+    "MvcMovieContext": "Server=localhost;Port=3306;Database=MvcMovieContext;User=root;Password=@SQLAdmin123;"
+  }
+
+==> View List of Packages
+
+dotnet list package
+
+==> Make Migration
+
+dotnet ef migrations add InitialCreate
+
+==> Flush to database
+
+dotnet ef database update
