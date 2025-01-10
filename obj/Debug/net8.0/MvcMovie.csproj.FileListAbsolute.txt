@@ -264,3 +264,4 @@ C:\Users\m9nrr\OneDrive\Desktop\PROJECT\MvcMovie\bin\Debug\net8.0\runtimes\win\l
 C:\Users\m9nrr\OneDrive\Desktop\PROJECT\MvcMovie\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
 C:\Users\m9nrr\OneDrive\Desktop\PROJECT\MvcMovie\obj\Debug\net8.0\MvcMovie.csproj.AssemblyReference.cache
 C:\Users\m9nrr\OneDrive\Desktop\PROJECT\MvcMovie\obj\Debug\net8.0\MvcMovie.csproj.Up2Date
+C:\Users\m9nrr\OneDrive\Desktop\PROJECT\MvcMovie\obj\Debug\net8.0\MvcMovie.sourcelink.json

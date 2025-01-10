@@ -1,0 +1,45 @@
+@* <table class="table">
+    <thead class="text-center">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AvailableProducts![0].IdProduct)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvailableProducts![0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvailableProducts![0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvailableProducts![0].Quantity)
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+@foreach (var item in Model.AvailableProducts!) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProduct)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            @* <td>
+                <a asp-action="Edit" asp-route-id="@item.IdProduct">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdProduct">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdProduct">Delete</a>
+            </td> *@
+            <td>
+                <a asp-action="BuyProduct" asp-route-id="@item.IdProduct">Buy Product</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table> *@

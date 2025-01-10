@@ -33,3 +33,22 @@ dotnet ef migrations add InitialCreate
 ==> Flush to database
 
 dotnet ef database update
+
+
+=================
+Buat Vending Machine menggunakan ViewModel
+
+-> Buat Authorization
+-> fungsi login
+-> fungsi logout
+    Identity Manager
+================
+
+Identity di Program.cs
+tambahkan di use Identity
+pada dbContext tambahkan Inherit ke Identity
+
+===
+tambahkan Authorization di atas controller
+
+

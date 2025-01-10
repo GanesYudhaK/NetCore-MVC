@@ -6,7 +6,7 @@ namespace MvcMovie.Models;
 
 public class Product
 {
-    [Key]
+    [Key, Display(Name = "Id Product")]
     public int IdProduct { get; set; }
 
     [StringLength(60, MinimumLength = 3), Required]
@@ -14,6 +14,6 @@ public class Product
 
     [Range(1, 100), DataType(DataType.Currency), Column(TypeName = "decimal(18, 2)")]
     public decimal Price { get; set; }
-    [Range(1, int.MaxValue, ErrorMessage = "Quantity must be at least 1.")]
+    [Range(0, int.MaxValue)]
     public int? Quantity {  get; set; }
 }

@@ -1,5 +1,5 @@
 @* @model IEnumerable<MvcMovie.Models.Movie> *@
-@model MvcMovie.Models.MovieGenreViewModel
+@model MvcMovie.ModelViewModel.MovieGenreViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -20,8 +20,8 @@
         <input type="submit" value="Filter" />
     </p>
 </form>
-<table class="table">
-    <thead>
+<table class="table table-bordered display nowrap" style="overflow-x: scroll;">
+    <thead class="text-center">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Movies![0].Title)
@@ -38,7 +38,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Movies![0].Rating)
             </th>
-            <th></th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
